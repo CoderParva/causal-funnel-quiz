@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f8;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin: 15px 0;
+}
+
+button {
+  padding: 8px 16px;
+  margin: 6px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #1976d2;
+  color: #ffffff;
+}
+
+button:hover {
+  background: #125aa0;
+}
+
+button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Timer */
+.timer {
+  text-align: right;
+  font-weight: bold;
+  color: #d32f2f;
+  margin-bottom: 6px;
+}
+
+/* Options */
+.option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f1f3f5;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.option:hover {
+  background: #e0e0e0;
+}
+
+.option input {
+  transform: scale(1.2);
+}
+
+/* Selected option */
+.option.selected {
+  background: #cfe3ff;
+  border: 2px solid #1976d2;
+}
+
+/* Navigation panel */
+.nav-panel {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.nav-btn {
+  width: 36px;
+  height: 36px;
+  margin: 5px;
+  border-radius: 50%;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-btn.attempted {
+  background: #4caf50;
+  color: white;
+}
+
+.nav-btn.unattempted {
+  background: #dddddd;
+}
+
+/* Progress bar */
+.progress-bar {
+  background: #ddd;
+  height: 8px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #1976d2;
+  border-radius: 5px;
+}
+
+/* Score */
+.score {
+  font-size: 22px;
+  text-align: center;
+  margin: 20px 0;
+  color: #2e7d32;
+}
+/* ---------- Responsive Design ---------- */
+
+@media (max-width: 768px) {
+  .quiz-container,
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-size: 18px;
+  }
+
+  .option {
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+    margin: 6px 0;
+  }
+
+  .nav-btn {
+    width: 32px;
+    height: 32px;
+    margin: 4px;
+  }
+
+  .timer {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+/* ---------- Animations ---------- */
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button micro-interactions */
+button {
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+/* Navigation buttons row */
+.nav-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.nav-actions button {
+  flex: 1;
+}
+
+/* Skip button styling */
+.skip-btn {
+  background: #757575;
+}
+
+.skip-btn:hover {
+  background: #5c5c5c;
+}
