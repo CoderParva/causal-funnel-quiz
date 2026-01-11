@@ -11,10 +11,10 @@ The application simulates a real online examination system with a clean UI, time
 https://resplendent-sopapillas-12c401.netlify.app
 
 🎥 **Demo Video:**  
-(Add your Google Drive video link here)
+https://drive.google.com/file/d/1rhZO7AZDASI8X9DNjpWB65rHE6Tjx77N/view?usp=drivesdk
 
 📦 **Source Code:**  
-(Add your GitHub repository link here)
+https://github.com/CoderParva/causal-funnel-quiz
 
 ---
 
@@ -47,7 +47,6 @@ https://resplendent-sopapillas-12c401.netlify.app
 ### User Experience Enhancements (Bonus)
 - Attempted vs total questions counter
 - Visual progress bar
-- Skip question option (does not mark as attempted)
 - Keyboard navigation:
   - Arrow keys → Next / Previous
   - Number keys (1–4) → Select options
